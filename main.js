@@ -20,3 +20,17 @@ const bikes = [
 
     },
 ]
+
+let lightestBike =bikes[0] /**inizio col primo elemento dell array come riferimento */
+
+for (let i = 1; i < bikes.length; i++) { /**confronto nel ciclo il peso delle altre bici col primo, se ciclando trova un peso inferiore; aggiorna lightestbike con quel valore */
+    const bike = bikes[i];
+
+    // lightestBike = bike.peso
+
+    if(bike.peso < lightestBike.peso){ 
+        lightestBike = bike
+    }
+    
+}
+console.log(lightestBike);
