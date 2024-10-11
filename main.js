@@ -81,6 +81,16 @@ for (let i = 0; i < squadre.length; i++) {
 
 console.log(squadre);
 
+const  nomiFalli =  [];
+for (let i = 0; i < squadre.length; i++) {
+    nomiFalli.push({
+        nome : squadre[i].nome,
+        falli : squadre[i].falli,
 
+    })
+    
+}
+
+console.log(nomiFalli);
 
 
